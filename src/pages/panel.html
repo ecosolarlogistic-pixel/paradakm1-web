@@ -1,0 +1,32 @@
+<!-- {"title": "Panel de prospectos · KM1", "nav": "", "desc": "Maqueta del panel interno para revisar prospectos, validación y etapa del embudo.", "noindex": true} -->
+<section class="section-tight paper" data-admin>
+  <div class="wrap">
+    <div class="admin-top">
+      <div style="display:grid; gap:8px">
+        <p class="eyebrow">Uso interno · maqueta</p>
+        <h1>Panel de prospectos</h1>
+        <p class="muted" style="font-size:16px">Filas marcadas como ejemplo son datos de muestra. Las solicitudes que envíes desde los formularios de esta maqueta aparecen aquí, solo en tu navegador.</p>
+      </div>
+      <button class="btn btn-outline btn-sm" type="button" data-clear-leads>Borrar mis envíos de prueba</button>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><span>Prospectos totales</span><b data-kpi="total">0</b></div>
+      <div class="kpi"><span>Inversionistas</span><b data-kpi="inversionista">0</b></div>
+      <div class="kpi"><span>Aliados</span><b data-kpi="aliado">0</b></div>
+      <div class="kpi"><span>Pendientes de validación</span><b data-kpi="pendiente">0</b></div>
+    </div>
+    <div class="filters" role="group" aria-label="Filtrar por segmento">
+      <button type="button" data-filter="todos" aria-pressed="true">Todos</button>
+      <button type="button" data-filter="inversionista" aria-pressed="false">Inversionistas</button>
+      <button type="button" data-filter="aliado" aria-pressed="false">Aliados</button>
+      <button type="button" data-filter="viajero" aria-pressed="false">Viajeros</button>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Prospecto</th><th>Segmento</th><th>Tipo</th><th>Interés / capital</th><th>Origen</th><th>Etapa del embudo</th><th>Validación</th><th>Fecha</th></tr></thead>
+        <tbody data-leads></tbody>
+      </table>
+    </div>
+    <p class="disclaimer" style="margin-top:20px">En producción este panel requiere inicio de sesión, conexión al CRM y registro de cada cambio de estatus.</p>
+  </div>
+</section>

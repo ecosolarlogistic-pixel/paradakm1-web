@@ -1,0 +1,68 @@
+<!-- {"title": "Contacto · Parada KM1", "nav": "contacto", "desc": "Contacta a KM1 como viajero, aliado comercial o inversionista."} -->
+<section class="section-tight paper">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Contacto</p>
+      <h1 style="font-size:var(--fs-display)">¿Cómo quieres ser parte de KM1?</h1>
+      <p class="lead measure">Elige tu perfil para llegar directo al equipo correcto.</p>
+    </div>
+    <div class="paths">
+      <a class="path" href="#form-contacto">
+        <span class="ico">{{icon:pin}}</span>
+        <h3>Soy viajero</h3>
+        <p>Comentarios, sugerencias de ruta, flotillas o prensa.</p>
+        <span class="go">Escribirnos →</span>
+      </a>
+      <a class="path" href="@paraderos#aliados">
+        <span class="ico">{{icon:building}}</span>
+        <h3>Soy aliado o municipio</h3>
+        <p>Terrenos, franquicia, proveedores, alianzas comerciales y gobiernos locales.</p>
+        <span class="go">Proponer una oportunidad →</span>
+      </a>
+      <a class="path" href="@capital#form-inversion">
+        <span class="ico">{{icon:chart}}</span>
+        <h3>Soy inversionista</h3>
+        <p>Institucionales, family offices, desarrolladores y compra compartida.</p>
+        <span class="go">Solicitar evaluación →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="form-contacto">
+  <div class="wrap form-shell">
+    <div style="display:grid; gap:28px">
+      <div class="section-head" style="margin:0">
+        <p class="eyebrow">Viajeros y público general</p>
+        <h2>Escríbenos</h2>
+      </div>
+      <div class="contact-list">
+        <div><span>Atención a viajeros</span><b>hola@paradakm1.com.mx</b></div>
+        <div><span>Expansión y aliados</span><b>expansion@paradakm1.com.mx</b></div>
+        <div><span>Relación con inversionistas</span><b>capital@paradakm1.com.mx</b></div>
+        <div><span>Contacto de cumplimiento</span><b>cumplimiento@paradakm1.com.mx</b></div>
+      </div>
+    </div>
+    <div class="form-card">
+      <form data-lead-form="viajero" novalidate>
+        <div class="form-step">
+          <div class="fields">
+            <div class="field"><label for="ct-nombre">Nombre <span class="req">*</span></label><input id="ct-nombre" name="nombre" type="text" autocomplete="name" required><span class="err">Escribe tu nombre.</span></div>
+            <div class="field"><label for="ct-correo">Correo <span class="req">*</span></label><input id="ct-correo" name="correo" type="email" autocomplete="email" required><span class="err">Escribe un correo válido.</span></div>
+            <div class="field full"><label for="ct-tipo">Motivo</label>
+              <select id="ct-tipo" name="tipo"><option>Comentario sobre la experiencia</option><option>Sugerir una ruta</option><option>Flotillas y transporte</option><option>Prensa</option><option>Otro</option></select></div>
+            <div class="field full"><label for="ct-msg">Mensaje <span class="req">*</span></label><textarea id="ct-msg" name="mensaje" required></textarea><span class="err">Escribe tu mensaje.</span></div>
+            <label class="check field full"><input type="checkbox" name="privacidad" id="ct-priv" required><span>Acepto el <a href="@legal#privacidad">aviso de privacidad</a>. <span class="req">*</span></span></label>
+          </div>
+          <div class="form-actions"><span class="form-note">Respondemos en días hábiles.</span><button class="btn btn-primary" type="submit">Enviar mensaje <span class="arrow">→</span></button></div>
+        </div>
+      </form>
+      <div class="confirm" data-confirm hidden>
+        <div class="ok">{{icon:check}}</div>
+        <h3>Gracias por escribirnos.</h3>
+        <p class="muted">Kilo ya llevó tu mensaje al equipo. Te responderemos al correo que nos dejaste.</p>
+        <div class="tags" data-tags></div>
+      </div>
+    </div>
+  </div>
+</section>
